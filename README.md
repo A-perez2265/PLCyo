@@ -1,18 +1,17 @@
 # PLCyo
 
-## 1. A "Choose Your Own Adventure" Engine
+PLCyo is a project to build a custom programming language for choose-your-own-adventure and text-based interactive stories.
 
-Create a language specifically designed to author text-based interactive fiction or RPGs.
+The idea is to make it easier to write game scenes, choices, items, and player progress without having to code everything manually in JavaScript.
 
-### Syntax idea
-You define blocks of code as rooms, items, and paths.
+## What each person is doing
 
-### Compilation
-The transpiler takes your custom script and compiles it directly into a fully functioning, interactive HTML/JavaScript web page.
+- Person 1: works on the language itself. This includes the syntax, parser, and compiler logic that turns PLCyo code into something the game can run.
+- Person 2: handles the browser side. This person builds the HTML/JavaScript output so the game actually works in a web page and supports things like rooms, choices, and inventory.
+- Person 3: creates the demo game. This person writes the sample story and tests the language by building a real example that shows how the project works.
 
-### Risk / Reward
-This sidesteps deep algorithmic complexity entirely. It focuses heavily on state management (tracking player inventory) and flow control (how a user moves from one room block to another). Person 1 handles the engine, Person 2 handles the HTML/JS generation, and Person 3 writes the game script for the demo.
+## Project goal
 
----
+The language will let someone define rooms, items, and paths between scenes. Then the compiler will turn that into a playable web game. The main focus is on game flow and state tracking, like what the player has picked up and where they are in the story.
 
-PLCyo is a project for building a programming language tailored for interactive fiction and choose-your-own-adventure experiences.
+This is meant to stay simple and practical: build a language, generate a working game, and use a real demo to show that it works.
